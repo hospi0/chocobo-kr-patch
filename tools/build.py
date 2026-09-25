@@ -17,16 +17,17 @@ import argparse, collections, csv, hashlib, io, os, re, shutil, struct, subproce
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-import msg, dump, fill, krfont, reflow
+import msg, dump, fill, krfont, reflow, gilgfx
 
 JP = os.path.join(ROOT, 'work', 'jp')
 OUT = os.path.join(ROOT, 'work', 'kr')
 TSV = os.path.join(OUT, 'text.tsv')
 ROMDIR = r'C:\claude\roms\ps\Chocobo no Fushigi na Dungeon (Japan)'
-FDIR = r'F:\hospi\roms\ps roms\Chocobo no Fushigi na Dungeon (Japan)'
+FCHD = r'F:\hospi\roms\ps roms\Chocobo no Fushigi na Dungeon (Japan).chd'   # ★사용자가 실행하는 설치본은 이 .chd 하나(옛 폴더 없음)
+CHDMAN = r'C:\claude\utils\CHDMAN\chdman.exe'
 BIN = 'Chocobo no Fushigi na Dungeon (Japan).bin'
 SRC_MD5 = '52914D6BF757433174016768F17E016C'
-VER = 'v0.9'
+VER = 'v0.91'
 XDELTA = r'C:\claude\utils\xdelta.exe'
 BS = chr(92)
 
@@ -144,7 +145,19 @@ def layout(rid, kr, jp_hex):
         rows_ = fill.zukan_rows(kr)
         return ''.join(r + ' ' * (8 - len(r)) if k < len(rows_) - 1 else r for k, r in enumerate(rows_))
     if rid.startswith('MSG') and rid not in reflow.MENU:   # 창이 차면 버튼 대기({D}) 자동 삽입
-        return reflow.paginate(kr, jp_hex)
+        out = reflow.paginate(kr, jp_hex)
+        # ★접은 뒤에도 한도를 넘는 줄이 있으면 멈춘다 — 색 글자 뒤 조사(<02>…<00>라고)처럼 끊을 수 없는 덩어리가
+        #   «개행 앞 줄 = 창 폭»이 되면 빈 줄이 생긴다(실기 2026-09-26: «햄 호루라기라고 / (빈 줄) / 해»). 번역을 다듬을 것.
+        last, mid, H = fill.window_limits(jp_hex)
+        pages = out.rstrip('¶').split('{D}')
+        for pi, pg in enumerate(pages):
+            ls = (pg[len(BS + 'n'):] if pg.startswith(BS + 'n') else pg).split(BS + 'n')
+            for li, l in enumerate(ls):
+                lim = last if (pi == len(pages) - 1 and li == len(ls) - 1) else mid
+                if not any('가' <= c <= '힣' for c in l):       # 영문 그대로 둔 디버그 메뉴(MSG:x:305 START…)는 제외
+                    continue
+                assert fill.cells(l) <= lim, '%s 줄 폭 %d칸 > %d(창 폭 %d): %s' % (rid, fill.cells(l), lim, last, l)
+        return out
     if rid in fill.PADROW:
         w = fill.PADROW[rid]
         rs_ = kr.split(BS + 'n')
@@ -175,6 +188,7 @@ def build_font(code, one):
     for i in NOSYL1:                               # 0x10 = 대사 공백(빈 글리프), 0x20·0x25 = 안 씀 → 모두 비운다
         krfont.put(f, i, np.zeros((12, 12), np.uint8))
         krfont.put_small(f, i, np.zeros((8, 8), np.uint8))
+    f = bytearray(gilgfx.apply(f))                 # HUD·상점 값의 구운 «ｷﾞﾙ» 그림 → «길»
     assert len(f) == 65536
     return bytes(f)
 
@@ -339,9 +353,10 @@ def disc_and_dist(files, install):
     open(os.path.join(dist, 'readme.txt'), 'wb').write(rd.replace('\n', '\r\n').encode('cp949'))
     print('배포 %s  (xdelta md5 %s)' % (dist, pmd5))
     if install:
-        fd = os.path.join(FDIR, BIN)
-        shutil.copyfile(dst, fd)
-        print('F: 교체', fd, md5(fd))
+        cue = os.path.join(outdir, BIN[:-4] + '.cue')
+        shutil.copyfile(os.path.join(ROMDIR, BIN[:-4] + '.cue'), cue)
+        subprocess.run([CHDMAN, 'createcd', '-f', '-i', cue, '-o', FCHD], check=True)
+        print('F: 교체', FCHD)
     return dmd5, pmd5
 
 
@@ -449,7 +464,7 @@ README = '''초코보의 이상한 던전 (PS1 일본판) 한글 패치 @VER@
 
 [ 알려진 사항 ]
 
-■ 첫 시험 빌드입니다. 실기 확인 전입니다.
+■ v0.91 : 상점 가격·소지금 옆 그림 글자 「ギル」를 「길」로 바꾸고, 대사창을 넘어 줄이 밀리던 대사 2곳을 고쳤습니다.
 '''
 
 

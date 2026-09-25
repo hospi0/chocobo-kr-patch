@@ -443,7 +443,7 @@ MSG:1:129	008CE7		ab892c9b1f171b888d12ab0a1402879c017f118214168e1bbf1200	Then,I\
 MSG:1:130	008D02		102c111f111f00	Owowow!	아,찾았다
 MSG:1:131	008D09		f45bedd9e0880404fce80400018f15960a10a5159792881a00	I got\nthis from{D}\n<04>Chip<00>.	잔햄 <04>도르<00> 군한테서\n맡아 온 물건이야
 MSG:1:132	008D22		0277188217991f140372850a19999c03601b8202fa1b11bc8200	Take it as\nthanks for{D}\nfinding\nhim.	구해 준 답례로\n이걸 전해 달래
-MSG:1:133	008D3C		1999890a0402d9e0ddc127cce804000abc821112881a00	This is\na <02>Ham\nWhistle<00>.	이건\n<02>햄 호루라기<00>라고 해
+MSG:1:133	008D3C		1999890a0402d9e0ddc127cce804000abc821112881a00	This is\na <02>Ham\nWhistle<00>.	이게 바로\n<02>햄 호루라기<00>야
 MSG:1:134	008D53		19999c035917830404fce80400018f9e0a40c0d3e688cfedcc6015960ac0c1d2e09c318101b3bc821682179998881a00	Blow it and <04>Chip<00>\nwill get an\nitem from inside{D}\n<02>Atlas Dresser<00>.	이걸 불면 <04>도르<00> 군이\n「아트라의 옷장」에서\n아이템을 1개 가져다줘
 MSG:1:135	008D83		ac12a8113f0a1ca211a89a1200	Nice,\nhuh?	어때?\n굉장하지
 MSG:1:136	008D90		8111ab852cdbc7ea9201b3bc82161f881a00	Oh,your bag.	하는 김에,주머니도 가져왔어
@@ -529,7 +529,7 @@ MSG:1:215	009305		3d3d0181151999a8180aa8bc1f95873f00	Is that\nall?	…분명\n�
 MSG:1:216	009316		10210f1e121e120a1999199900	Ah!\nThis!	아!맞다 맞다\n이거 이거
 MSG:1:217	009323		92123181029101d0139c0a015c81181f881a00	Another\nplant!	화분을 1개 더\n찾았어
 MSG:1:218	009336		19198c2c02e3118214178700	Here!	여기에 놓아둘게
-MSG:1:219	009342		0404c5dfe67b7b04009e0a027297034a8e990d0a0404c0d3e604009e0a027297034a8e991f00	<04>Camilla<00>had her{D}\nfather\ntaken.{D}\nAnd now<04>Atla<00>.	<04>카미라 아빠<00>가\n사로잡히고{D}\n<04>아트라<00>가\n사로잡혔어
+MSG:1:219	009342		0404c5dfe67b7b04009e0a027297034a8e990d0a0404c0d3e604009e0a027297034a8e991f00	<04>Camilla<00>had her{D}\nfather\ntaken.{D}\nAnd now<04>Atla<00>.	<04>카미라 아빠<00>\n붙잡히고{D}\n<04>아트라<00>가\n사로잡혔어
 MSG:1:220	009368		f8edf45ded9e01de8e9982161f00	A dungeon{D}\nwas made.	던전이 생겨났어
 MSG:1:221	009376		02d3014802d885027297034a8e991fe2d8880a02fa036a9c928385f8edf45ded9c01549800	Wishes of\nthe Tyrian{D}\nCrystal\nvictims form{D}\ndungeons.	자수정에 사로잡힌 자의\n욕망을 바탕으로 던전을 만들어
 MSG:1:222	00939B		5fc7892c19999c92120a0179020592015c82161f881a00	I have\nseen{D}\nthis many\ntimes.	나는 이걸 벌써\n몇 번이나 봐 왔어
