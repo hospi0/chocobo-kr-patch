@@ -35,6 +35,7 @@ TOK = re.compile(r'<[0-9A-F]{2}>|\{[0-9A-F]+(?::[0-9A-F]{2})?\}|\\n|¶')
 VAR_W = {'{B}': 6, '7': 6}            # 이름·숫자 끼움 폭(가정) — {7:XX} 는 인자와 무관하게 6
 
 # SLPS 표별 칸 폭(원문 표 전체의 최대 칸) — 목록 창의 칸이 고정이다
+STAT_LINE_W, STAT_NAME_W = 22, 9           # 상태 메시지 한 줄 한도 · 가장 긴 아이템 이름(바이오버스트 구슬 등)
 TABLE_W = {'CARD': 9, 'ITEM': 10, 'MON': 8, 'SKILL': 8, 'DESC': 22, 'ATTR': 22, 'ATTR2': 22, 'STAT': 24}
 # ITEM 분류별 칸 폭 = 그 분류 원문 최대(v0.1 실기: 「블리자드의 책」 7칸이 Lv 칸을 덮었다)
 ITEM_CAT_W = [(0, 11, 7), (12, 35, 8), (36, 66, 8), (67, 93, 7), (94, 154, 9), (155, 192, 9),
@@ -197,6 +198,10 @@ def check(rid, jp_hex, kr):
             lim = next(w for a, b, w in ITEM_CAT_W if a <= n <= b)
         if c > lim:
             err.append('%d칸>%d(%s 폭) 「%s」' % (c, lim, tb, k))
+        if tb == 'STAT' and '{7:01}' in k:     # ★상태 줄은 «22칸»에서 잘린다(실기 2026-09-26 「…못 줍」) — 아이템 이름 최대 9칸 + 숫자 2칸
+            full = cells(re.sub(r'\{\d:\w+\}|<\w+>', '', k)) + STAT_NAME_W + (2 if '{7:00}' in k else 0)
+            if full > STAT_LINE_W:
+                err.append('상태 줄 %d칸>%d(이름 %d칸 포함) 「%s」' % (full, STAT_LINE_W, STAT_NAME_W, k))
         return err, warn
     if tb == 'SLPS':                        # 메뉴 — 원문 칸 수가 곧 칸 폭(3칸 이하는 +1 까지 경고)
         for l in k.split('\\n'):
