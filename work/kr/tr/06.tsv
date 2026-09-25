@@ -1,0 +1,245 @@
+MON:0	고블린
+MON:1	봄
+MON:2	옐로 젤리
+MON:3	힐기가스
+MON:4	킹 베히모스
+MON:5	톤베리
+MON:6	웨어래트
+MON:7	블러디 본
+MON:8	몰볼
+MON:9	너트이터
+MON:10	라미아
+MON:11	가르키마세라
+MON:12	흑마도사
+MON:13	사하긴
+MON:14	소환사
+MON:15	랜드터틀
+MON:16	레버넌트
+MON:17	데저트 사하긴
+MON:18	아리만
+MON:19	시프
+MON:20	매직 포트
+MON:21	홀리 드래곤
+MON:22	브랜드 라미아
+MON:23	미스트 드래곤
+MON:24	다크 바하무트
+MON:25	사보텐더
+MON:26	슬러그
+MON:27	스틸 배트
+MON:28	블랙 고블린
+MON:29	다크 타이탄
+MON:30	스톤 골렘
+MON:31	헤지호그
+MON:32	목인
+MON:33	메탈 히트맨
+MON:34	개틀링스
+MON:35	플로트아이볼
+MON:36	베히모스
+MON:37	프로스트 골렘
+MON:38	오거
+MON:39	버서 오거
+MON:40	푸딩
+MON:41	무스
+MON:42	마리오네이터
+MON:43	그레네이드
+MON:44	네온
+MON:45	드리피
+MON:46	해골 이터
+MON:47	스켈레톤
+MON:48	어니언
+MON:49	임프
+MON:50	글라샤라볼라스
+MON:51	시마도사
+MON:52	마스터 톤베리
+MON:53	마몬
+MON:54	록 가터
+MON:55	미니 매지션
+MON:56	좀비
+MON:57	미니 드루이드
+MON:58	마스크
+MON:59	사신
+MON:60	와일드 래트
+MON:61	레벨 체커
+MON:62	신룡
+MON:63	오메가
+MON:64	데빌 초코보
+MON:65	크리셰르
+MON:66	몰볼 그레이트
+MON:67	사포텐더
+MON:68	파오
+MON:69	레벨 트리커
+MON:70	유니콘
+MON:71	이프리트
+MON:72	시바
+MON:73	라무
+MON:74	피닉스
+MON:75	카번클
+MON:76	타이탄
+MON:77	오딘
+MON:78	리바이어선
+MON:79	바하무트
+MON:80	티폰
+MON:81	파라크
+MON:82	자니타
+MON:112	수수께끼 초코보
+MON:113	크레르
+MON:114	레그라
+MON:115	포크
+MON:116	카키아
+MON:117	사니아
+MON:118	라스크
+MON:119	미르
+MON:120	도르
+MON:121	아트라
+MON:122	위즈
+MON:123	카미라 엄마
+MON:124	카미라 아빠
+MON:125	카미라
+MON:126	횃불
+MON:127	책장
+MON:128	봉인된 상자
+MON:129	발전기
+MON:131	잠긴 상자
+MON:133	샘
+MON:134	아이템 사용
+SKILL:1	아이스 록
+SKILL:2	어퍼
+SKILL:3	아토믹 레이
+SKILL:4	알테마
+SKILL:5	번개 철권
+SKILL:6	번개검
+SKILL:7	바위 던지기
+SKILL:8	위더 히트
+SKILL:9	에어로
+SKILL:10	어니언 던지기
+SKILL:11	괴음파
+SKILL:12	물기
+SKILL:13	달그락
+SKILL:14	까마귀
+SKILL:15	흡수
+SKILL:16	베기
+SKILL:17	길 던지기
+SKILL:18	퀘이크
+SKILL:19	약
+SKILL:20	얼음 발톱
+SKILL:21	얼음 철권
+SKILL:22	콜
+SKILL:23	고블린 어택
+SKILL:24	가면의 저주
+SKILL:25	혼란 음파
+SKILL:26	혼란의 숨결
+SKILL:27	사일런스
+SKILL:28	앙갚음
+SKILL:29	산
+SKILL:30	선더
+SKILL:31	선더 블레이드
+SKILL:32	죽음의 선고
+SKILL:33	자폭
+SKILL:34	수리검 던지기
+SKILL:35	소환
+SKILL:36	촉수
+SKILL:37	모래 뿌리기
+SKILL:38	박치기
+SKILL:39	슬리플
+SKILL:40	슬로
+SKILL:41	몸통 박치기
+SKILL:42	타이달 웨이브
+SKILL:43	터치
+SKILL:44	씨앗
+SKILL:45	작은 멜로디
+SKILL:46	지팡이
+SKILL:47	차가운 송곳니
+SKILL:48	차가운 안개
+SKILL:49	토드
+SKILL:50	토드의 숨결
+SKILL:51	독가스
+SKILL:52	독의 숨결
+SKILL:53	독 송곳니
+SKILL:54	독침
+SKILL:55	해골 던지기
+SKILL:56	돌진
+SKILL:57	?
+SKILL:58	울음소리
+SKILL:59	쓸어 베기
+SKILL:60	때리기
+SKILL:61	너트 던지기
+SKILL:62	니들
+SKILL:63	훔치기
+SKILL:64	네온 볼
+SKILL:65	점액
+SKILL:66	튕겨 날리기
+SKILL:67	파동포
+SKILL:68	해머
+SKILL:69	빔 커터
+SKILL:70	할퀴기
+SKILL:71	따귀
+SKILL:72	파이어
+SKILL:73	파이어 로드
+SKILL:74	날려 버리기
+SKILL:75	프티 메테오
+SKILL:76	블리자드
+SKILL:77	후려치기
+SKILL:78	휘두르기
+SKILL:79	헤이스트
+SKILL:80	끈적끈적
+SKILL:81	식칼
+SKILL:82	홀리
+SKILL:83	화염 발톱
+SKILL:84	화염 채찍
+SKILL:85	매직
+SKILL:86	매직 해머
+SKILL:87	메가 플레어
+SKILL:88	메테오
+SKILL:89	유혹
+SKILL:90	꿈꾸는 안개
+SKILL:91	라이브라
+SKILL:92	레벨3 올드
+SKILL:93	레벨3 컨퓨
+SKILL:94	레벨4 그라비가
+SKILL:95	레벨4 플레어
+SKILL:96	피로 가스
+SKILL:97	워프 던지기
+SKILL:98	내려치기
+SKILL:99	퍼플 브레스
+SKILL:100	브레인즈 아이
+SKILL:101	어택
+SKILL:102	라이트 애로
+SKILL:103	서클 샷
+SKILL:104	플라즈가
+SKILL:105	주얼
+SKILL:106	바이오
+SKILL:107	힐 혼
+SKILL:108	지옥의 화염
+SKILL:109	D·더스트
+SKILL:110	심판의 번개
+SKILL:111	전생의 불꽃
+SKILL:112	루비의 빛
+SKILL:113	대지의 분노
+SKILL:114	참철검
+SKILL:115	궁니르의 창
+SKILL:116	대해일
+SKILL:117	테라 플레어
+SKILL:118	천지붕괴
+SKILL:119	명계육포격
+SKILL:120	슈퍼 니들
+SKILL:121	무 속성
+SKILL:122	불 속성
+SKILL:123	얼음 속성
+SKILL:124	번개 속성
+SKILL:125	바람 속성
+SKILL:126	소환수
+SKILL:127	무 타입
+SKILL:128	부유 타입
+SKILL:129	독 타입
+SKILL:130	부활 타입
+SKILL:131	불사 타입
+SKILL:132	거인 타입
+SKILL:133	망자 타입
+SKILL:134	식물 타입
+SKILL:135	용 타입
+SKILL:136	머신 타입
+SKILL:137	부유·불사 타입
+SKILL:138	독·부활 타입
+SKILL:139	망자·부활 타입
+SKILL:140	식물·독 타입
+SKILL:141	용·부유 타입

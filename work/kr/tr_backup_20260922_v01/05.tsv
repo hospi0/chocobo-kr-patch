@@ -1,0 +1,315 @@
+CARD:0	구멍 난 카드
+CARD:1	구부러진 카드
+CARD:2	곰팡이 핀 카드
+CARD:3	잘린 카드
+CARD:4	구겨진 카드
+CARD:5	닳은 카드
+CARD:6	휘어진 카드
+CARD:7	찢어진 카드
+CARD:8	진흙 묻은 카드
+CARD:9	번진 카드
+CARD:10	젖은 카드
+CARD:11	낡은 카드
+CARD:12	해진 카드
+CARD:13	새 목걸이
+CARD:14	멋진 목걸이
+CARD:15	괜찮은 목걸이
+CARD:16	큰 목걸이
+CARD:17	세련된 목걸이
+CARD:18	폼 나는 목걸이
+CARD:19	촌스러운 목걸이
+CARD:20	귀여운 목걸이
+CARD:21	더러운 목걸이
+CARD:22	이끼 낀 목걸이
+CARD:23	울퉁불퉁 목걸이
+CARD:24	공들인 목걸이
+CARD:25	녹슨 목걸이
+CARD:26	수수한 목걸이
+CARD:27	밋밋한 목걸이
+CARD:28	심플한 목걸이
+CARD:29	섹시한 목걸이
+CARD:30	후진 목걸이
+CARD:31	작은 목걸이
+CARD:32	반들반들 목걸이
+CARD:33	매끈한 목걸이
+CARD:34	가시 달린 목걸이
+CARD:35	진흙투성이 목걸이
+CARD:36	나이스 목걸이
+CARD:37	화려한 목걸이
+CARD:38	헐렁한 목걸이
+CARD:39	낡은 목걸이
+CARD:40	이상한 목걸이
+CARD:41	때 묻은 목걸이
+CARD:42	우스운 목걸이
+CARD:43	일그러진 목걸이
+CARD:44	요란한 목걸이
+CARD:45	달콤매콤 열매
+CARD:46	달콤한 열매
+CARD:47	싱거운 열매
+CARD:48	맛나 보이는 열매
+CARD:49	딱딱한 열매
+CARD:50	단단한 열매
+CARD:51	곰팡내 열매
+CARD:52	매운 열매
+CARD:53	냄새나는 열매
+CARD:54	맛없는 열매
+CARD:55	물컹한 열매
+CARD:56	고소한 열매
+CARD:57	가루 같은 열매
+CARD:58	까칠한 열매
+CARD:59	짭짤한 열매
+CARD:60	촉촉한 열매
+CARD:61	떫은 열매
+CARD:62	짠 열매
+CARD:63	신 열매
+CARD:64	탱탱한 열매
+CARD:65	꽉 찬 열매
+CARD:66	흙내 나는 열매
+CARD:67	비린 열매
+CARD:68	냄새 독한 열매
+CARD:69	쓴 열매
+CARD:70	흐물흐물 열매
+CARD:71	말랑말랑 열매
+CARD:72	싱싱한 열매
+CARD:73	거품 이는 약
+CARD:74	기름진 약
+CARD:75	반짝이는 약
+CARD:76	번쩍이는 약
+CARD:77	물렁한 약
+CARD:78	역겨운 약
+CARD:79	맑은 약
+CARD:80	까칠한 약
+CARD:81	주르륵 약
+CARD:82	젤리 같은 약
+CARD:83	톡 쏘는 약
+CARD:84	알갱이 든 약
+CARD:85	걸쭉한 약
+CARD:86	두근두근 약
+CARD:87	진득한 약
+CARD:88	질척한 약
+CARD:89	미끈한 약
+CARD:90	미끌미끌 약
+CARD:91	찐득한 약
+CARD:92	쩍쩍 붙는 약
+CARD:93	끈끈한 약
+CARD:94	퍼석한 약
+CARD:95	끈적끈적 약
+CARD:96	빛나는 약
+CARD:97	보글보글 약
+CARD:98	탱글탱글 약
+CARD:99	들러붙는 약
+ITEM:0	식별 카드
+ITEM:1	확신 카드
+ITEM:2	컨퓨 카드
+ITEM:3	슬리플 카드
+ITEM:4	토드 카드
+ITEM:5	미니멈 카드
+ITEM:6	블링크 카드
+ITEM:7	명계 카드
+ITEM:8	오일 카드
+ITEM:9	샘물 카드
+ITEM:10	맵 카드
+ITEM:11	텔레포 카드
+ITEM:12	유리 목걸이
+ITEM:14	루비 목걸이
+ITEM:15	다이아 목걸이
+ITEM:16	민첩의 목걸이
+ITEM:17	스피드 목걸이
+ITEM:18	느긋한 목걸이
+ITEM:19	판독 목걸이
+ITEM:20	속독 목걸이
+ITEM:21	느린읽기 목걸이
+ITEM:22	스태미나 목걸이
+ITEM:23	건강 목걸이
+ITEM:24	어깨결림 목걸이
+ITEM:25	회복 목걸이
+ITEM:26	리커버리 목걸이
+ITEM:27	불행 목걸이
+ITEM:28	헛방 목걸이
+ITEM:29	반딧불 목걸이
+ITEM:30	달빛 목걸이
+ITEM:31	토드 목걸이
+ITEM:32	조그만 목걸이
+ITEM:33	신기한 목걸이
+ITEM:34	가드 목걸이
+ITEM:35	기억의 목걸이
+ITEM:36	너트
+ITEM:46	라산 열매
+ITEM:47	지치는 열매
+ITEM:48	맛있는 열매
+ITEM:49	진수성찬 열매
+ITEM:50	썩은 열매
+ITEM:51	생명의 열매
+ITEM:52	실패의 열매
+ITEM:53	레벨업 열매
+ITEM:54	레벨다운 열매
+ITEM:55	지혜의 열매
+ITEM:56	민첩의 열매
+ITEM:57	불의 씨앗
+ITEM:58	얼음 씨앗
+ITEM:59	번개 씨앗
+ITEM:60	바람 씨앗
+ITEM:61	소거 씨앗
+ITEM:62	합체 씨앗
+ITEM:63	융합 씨앗
+ITEM:64	레벨 씨앗
+ITEM:65	기운 열매
+ITEM:66	기운 없는 열매
+ITEM:67	포션
+ITEM:74	하이포션
+ITEM:75	엘릭서
+ITEM:76	해독제
+ITEM:77	만능약
+ITEM:78	폭발약
+ITEM:79	투명약
+ITEM:80	대미지약
+ITEM:81	독약
+ITEM:82	석화제
+ITEM:83	슬로 약
+ITEM:84	헤이스트 약
+ITEM:85	봄 방지약
+ITEM:86	소금물
+ITEM:87	사일런스 약
+ITEM:88	눈에 좋은 약
+ITEM:89	디스펠 약
+ITEM:90	건망증 약
+ITEM:91	족쇄 약
+ITEM:92	도움 약
+ITEM:93	빈 병
+ITEM:101	가죽 발톱
+ITEM:102	나무 발톱
+ITEM:103	쇠 발톱
+ITEM:104	강철 발톱
+ITEM:105	미스릴 발톱
+ITEM:106	제왕의 발톱
+ITEM:107	크리스탈 발톱
+ITEM:108	티탄 발톱
+ITEM:109	화염 발톱
+ITEM:110	얼음 발톱
+ITEM:111	번개 발톱
+ITEM:112	바람 발톱
+ITEM:113	자연 발톱
+ITEM:114	드래곤 킬러
+ITEM:115	자이언트 킬러
+ITEM:116	언데드 킬러
+ITEM:117	플로터 킬러
+ITEM:118	플랜트 킬러
+ITEM:119	포이즌 킬러
+ITEM:120	토드 발톱
+ITEM:121	오더 클로
+ITEM:122	아크 클로
+ITEM:123	서클 클로
+ITEM:124	크로스 클로
+ITEM:125	멀티플 클로
+ITEM:126	가벼운 발톱
+ITEM:127	부동의 발톱
+ITEM:128	겐지의 발톱
+ITEM:129	쇠약의 발톱
+ITEM:130	강타 발톱
+ITEM:131	파워 클로
+ITEM:132	줄맞춤 발톱
+ITEM:133	인내의 발톱
+ITEM:134	크리티컬 클로
+ITEM:135	욕심쟁이 발톱
+ITEM:136	더블 녹 클로
+ITEM:137	레벨4 데스 발톱
+ITEM:138	레벨3 데스 발톱
+ITEM:139	캔슬 클로
+ITEM:140	히트백 클로
+ITEM:141	양날 발톱
+ITEM:142	치유의 발톱
+ITEM:143	리프레시 클로
+ITEM:144	애디션 클로
+ITEM:145	스내치 클로
+ITEM:146	잠의 발톱
+ITEM:147	혼란의 발톱
+ITEM:148	독의 발톱
+ITEM:149	피로의 발톱
+ITEM:150	석화의 발톱
+ITEM:151	제노사이더
+ITEM:152	길의 발톱
+ITEM:153	럭키 클로
+ITEM:154	섀도 클로
+ITEM:155	가죽 안장
+ITEM:158	나무 안장
+ITEM:159	쇠 안장
+ITEM:160	강철 안장
+ITEM:161	미스릴 메일
+ITEM:162	제왕의 안장
+ITEM:163	크리스탈 메일
+ITEM:164	티탄 안장
+ITEM:165	화염 안장
+ITEM:166	얼음 안장
+ITEM:167	번개 안장
+ITEM:168	바람 안장
+ITEM:169	자연 메일
+ITEM:170	탈취 안장
+ITEM:171	어니언 안장
+ITEM:172	신기루 안장
+ITEM:173	겐지의 안장
+ITEM:174	거북 등껍질
+ITEM:175	드래곤 메일
+ITEM:176	쇠약의 안장
+ITEM:177	봄의 안장
+ITEM:178	러프 메일
+ITEM:179	욕심쟁이 안장
+ITEM:180	돈 드는 안장
+ITEM:181	운 시험 안장
+ITEM:182	혼란 방지 안장
+ITEM:183	독 방지 안장
+ITEM:184	잠 방지 안장
+ITEM:185	피로 방지 안장
+ITEM:186	침묵 방지 안장
+ITEM:187	슬로 방지 안장
+ITEM:188	라이트 메일
+ITEM:189	닌자 안장
+ITEM:190	아뮬렛 메일
+ITEM:191	카운터 메일
+ITEM:192	생명의 안장
+ITEM:193	유니콘 마석
+ITEM:206	이프리트 마석
+ITEM:207	시바 마석
+ITEM:208	라무 마석
+ITEM:209	피닉스 마석
+ITEM:210	카번클 마석
+ITEM:211	타이탄 마석
+ITEM:212	오딘 마석
+ITEM:213	리바이어선 마석
+ITEM:214	바하무트 마석
+ITEM:215	티폰 마석
+ITEM:216	파라크 마석
+ITEM:217	돌
+ITEM:218	단단한 돌
+ITEM:219	워프 스톤
+ITEM:221	해골
+ITEM:222	햄 호루라기
+ITEM:223	텔레포 박스
+ITEM:224	문 열쇠
+ITEM:225	시프 열쇠
+ITEM:226	화분
+ITEM:227	광택 크림
+ITEM:228	무광 크림
+ITEM:229	신기한 책갈피
+ITEM:230	파이어 책
+ITEM:234	블리자드 책
+ITEM:235	선더 책
+ITEM:236	에어로 책
+ITEM:237	딤 책
+ITEM:238	샤인 책
+ITEM:239	드레인 책
+ITEM:240	알테마 구슬
+ITEM:241	홀리 구슬
+ITEM:242	프티 메테오 구슬
+ITEM:243	메테오 구슬
+ITEM:244	플레어 구슬
+ITEM:245	기가 플레어 구슬
+ITEM:246	그라비가 구슬
+ITEM:247	퀘이크 구슬
+ITEM:248	웨이브 구슬
+ITEM:249	데스 구슬
+ITEM:250	데존 구슬
+ITEM:251	데존즈 구슬
+ITEM:252	바이오 구슬
+ITEM:253	바이오버스트 구슬
+ITEM:254	필라네스 구슬
+ITEM:255	라포스 구슬
