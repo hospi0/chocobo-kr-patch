@@ -17,7 +17,7 @@ import argparse, collections, csv, hashlib, io, os, re, shutil, struct, subproce
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
-import msg, dump, fill, krfont, reflow, gilgfx
+import msg, dump, fill, krfont, reflow, gilgfx, missgfx
 
 JP = os.path.join(ROOT, 'work', 'jp')
 OUT = os.path.join(ROOT, 'work', 'kr')
@@ -464,7 +464,7 @@ README = '''초코보의 이상한 던전 (PS1 일본판) 한글 패치 @VER@
 
 [ 알려진 사항 ]
 
-■ v0.91 : 상점 가격·소지금 옆 그림 글자 「ギル」를 「길」로 바꾸고, 대사창을 넘어 줄이 밀리던 대사 2곳을 고쳤습니다.
+■ v0.91 : 상점 가격·소지금 옆 그림 글자 「ギル」를 「길」로, 공격이 빗나갈 때 뜨는 「ミス」를 「미스」로 바꾸고, 대사창을 넘어 줄이 밀리던 대사 2곳과 화면 아래 상태 줄이 잘리던 문구를 고쳤습니다.
 '''
 
 
@@ -488,13 +488,14 @@ def main():
     print('  STAT 맞춤 공백 최대 %d칸' % cap)
     print('SLPS      ' + rep)
     os.makedirs(OUT, exist_ok=True)
-    for name, data in (('FONT.PXL', font), ('MSG.BIN', m), ('SLPS_012.34', e)):
+    fb = missgfx.apply(open(missgfx.SRC, 'rb').read())   # 데미지 숫자 판 «ミス» 그림 → «미스»
+    for name, data in (('FONT.PXL', font), ('MSG.BIN', m), ('SLPS_012.34', e), ('FBDAP.BIN', fb)):
         open(os.path.join(OUT, name), 'wb').write(data)
     io.open(os.path.join(OUT, 'codemap.tsv'), 'w', encoding='utf-8').write(
         ''.join('%s\t%d\t%s\n' % (c, i, enc_idx(i).hex()) for c, i in sorted(code.items(), key=lambda x: x[1])))
-    print('→ work/kr/ FONT.PXL · MSG.BIN · SLPS_012.34 · codemap.tsv')
+    print('→ work/kr/ FONT.PXL · MSG.BIN · SLPS_012.34 · FBDAP.BIN · codemap.tsv')
     if a.disc:
-        disc_and_dist(['FONT.PXL', 'MSG.BIN', 'SLPS_012.34'], a.install)
+        disc_and_dist(['FONT.PXL', 'MSG.BIN', 'SLPS_012.34', 'FBDAP.BIN'], a.install)
 
 
 if __name__ == '__main__':
